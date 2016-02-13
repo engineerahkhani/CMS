@@ -26,7 +26,7 @@ function getCountRows($id){
 	return $result2['0'];
 }
 function getnumrows2($table){
-	$a="SELECT `id` FROM `".$table."`";
+	$a="SELECT `userId` FROM `".$table."`";
 	$result2=mysql_num_rows(mysql_query($a));
 	return $result2;
 } 
@@ -62,6 +62,15 @@ function test_input($data) {
 	$data = stripslashes($data);
 	$data = htmlspecialchars($data);
 	return $data;
+}
+function Redirect($url, $permanent = false)
+{
+	if (headers_sent() === false)
+	{
+		header('Location: ' . $url, true, ($permanent === true) ? 301 : 302);
+	}
+
+	exit();
 }
 
 function showdate(){
