@@ -140,14 +140,12 @@ $userRole = $userRole[0]['roleTitle'];
                                             <div class="rank-label-container">
                                               <button class="btn btn-info btn-block "><span class="fa fa-edit fa-2x"></span> </button>
                                             </div>
-                                                <form action="../../include/upload.php" method="post" enctype="multipart/form-data">
+                                                <form action="include/upload.php" method="post" enctype="multipart/form-data">
                                                     Select image to upload:
                                                     <input type="file" name="fileToUpload" id="fileToUpload">
                                                     <input name="userId" value="<?php echo $currentUser['userId'];?>" hidden>
                                                     <input type="submit" value="Upload Image" name="submit" class="btn btn-info btn-block" >
                                                 </form>
-
-
                                         </div>
                                     </div>
                                 </div>
