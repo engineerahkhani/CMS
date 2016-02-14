@@ -82,10 +82,7 @@ $validUser = select_user_by_userId($validUserId)[0];
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <h1>this section should load from layout</h1>
-                        <!--                    --><?php //echo ROOT; ?>
-                        <?php echo SitRoot; ?>
+                    <div class="col-sm-4">
                         <div id="pre">
 
                         </div>
@@ -110,7 +107,7 @@ $validUser = select_user_by_userId($validUserId)[0];
                 $("#wrapper").toggleClass("toggled");
             });
             $("#admin").click(function () {
-                $("#pre").load('layouts/admin/users.php');
+                $("#pre").load('backend/addons/usermangement/index.php');
             });
             $("#profile").click(function () {
                 $("#pre").load('layouts/users/profile.php');
@@ -122,20 +119,3 @@ $validUser = select_user_by_userId($validUserId)[0];
     </body>
 
     </html>
-<?php
-if (isset($_POST))  // if form was submitted (if you came here with form data)
-{
-    $userId = $_POST['userId'];
-    echo $userId;
-    if (delete_user($userId)) {
-        echo "success";
-    } else {
-        echo "oo";
-    }
-    ?>
-    <script>
-        $("#pre").load('layouts/admin/users.php');
-    </script>
-    <?php
-}
-?>

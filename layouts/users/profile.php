@@ -1,17 +1,11 @@
 <?php
 require_once("../../include/config.php");
-/**
- * Created by PhpStorm.
- * User: AHMAD
- * Date: 2/11/2016
- * Time: 11:31 AM
- */
+
 $userId = 1;
 $currentUser = select_user_by_userId($userId)[0];
 $userRole = select_RoleTitle_by_RoleId($currentUser['RoleId']);
 $userRole = $userRole[0]['roleTitle'];
 ?>
-
     <div class="container ">
         <div class="row">
             <div class=" col-xs-12 user-details">
