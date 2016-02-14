@@ -28,15 +28,6 @@ $validUser = select_user_by_userId($validUserId)[0];
                 <ul class="nav navbar-nav">
                     <li><a href="#">Home</a></li>
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin
-                            <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li id="admin"><a href="#">Users</a></li>
-                            <li><a href="#">Page 1-2</a></li>
-                            <li><a href="#">Page 1-3</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $validUser['userName']; ?>
                             <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -106,12 +97,9 @@ $validUser = select_user_by_userId($validUserId)[0];
                 e.preventDefault();
                 $("#wrapper").toggleClass("toggled");
             });
-            $("#admin").click(function () {
-                $("#pre").load('backend/addons/usermangement/index.php');
-            });
-            $("#profile").click(function () {
-                $("#pre").load('layouts/users/profile.php');
 
+            $("#profile").click(function () {
+                $("#pre").load('backend/addons/usermangement/index.php');
             });
         });
     </script>

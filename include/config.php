@@ -5,7 +5,7 @@ define('SitRoot',  $_SERVER['DOCUMENT_ROOT'] .'/');
 
 require_once(ROOT."functions.php");
 require_once(ROOT."config.php");
-require_once(ROOT."user_fns.php");
+require_once(ROOT . "dataBaseHandlerFunction.php");
 
 
 

@@ -21,6 +21,26 @@ function select_all($tbl)
   $conn->close();
 }
 //=============================================================
+function selectById($tbl,$id)
+{
+  $conn = db_connect();
+  $sql = "SELECT * from $tbl WHERE userId = $id";
+  $result = $conn->query($sql);
+  if ($result->num_rows > 0) {
+    // output data of each row
+    //create an array
+    $result_array = array();
+    for ($count = 0; $row = $result->fetch_assoc(); $count++)
+    {
+      $result_array[$count] = $row;
+    }
+    return $result_array;
+  } else {
+    return 0;
+  }
+  $conn->close();
+}
+//=============================================================
 function select_user_by_userId($userId)
 {
   $conn = db_connect();
