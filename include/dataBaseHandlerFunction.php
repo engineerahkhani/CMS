@@ -94,7 +94,33 @@ VALUES (NULL,'$username','$userEmail','$userPassword',NULL ,NULL ,NULL ,'$userRo
   }
   $conn->close();
 }
+/////////////////////////////////////////////////////////////
+function registerNewRole($roleTitle){
+  $conn = db_connect();
+  $sql = "INSERT INTO `tblroles` (`roleId` ,`roleTitle`)
+VALUES (NULL,'$roleTitle')";
+  if ($conn->query($sql) === TRUE) {
+    return true;
+  } else {
+    return false;
+  }
+  $conn->close();
+}
 //////////////////////////////////////////////////////////////
+
+function DeleteRole($roleId)
+{
+  $conn = db_connect();
+  $sql = "DELETE from tblroles WHERE  rleId='$roleId'";
+  if ($conn->query($sql) === TRUE) {
+    return true;
+  } else {
+    return false;
+  }
+  $conn->close();
+}
+
+/////////////////////////////////////////////////////////////
 function select_RoleTitle_by_RoleId($roleId)
 {
   $conn = db_connect();

@@ -5,6 +5,7 @@ $currentUser = select_user_by_userId($userId)[0];
 $userRole = select_RoleTitle_by_RoleId($currentUser['RoleId']);
 $userRole = $userRole[0]['roleTitle'];
 ?>
+<div class="container-fluid">
 <div class="col-xs-12 col-sm-6">
     <div class="row">
         <form accept-charset="UTF-8" role="form" id="register-form" method="post" action="backend/addons/usermangement/edit/editUsernameEmail.php">
@@ -83,4 +84,5 @@ $userRole = $userRole[0]['roleTitle'];
             </form>
         </div>
     </div>
+</div>
 </div>
