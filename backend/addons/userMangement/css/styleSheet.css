@@ -40,11 +40,10 @@
 
 .user-info-block .navigation {
     text-align: center;
-    float: none;
+    float: left;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-
     list-style: none;
     border-bottom: 1px solid #428BCA;
     border-top: 1px solid #428BCA;
@@ -68,7 +67,7 @@
 
 .user-info-block .user-body {
     float: left;
-    padding: 5%;
+    padding: 0 5%;
     width: 100%;
 }
 
@@ -92,13 +91,18 @@
 
 .profile-header-img {
     padding: 54px;
+
 }
 
 /**
  * Ranking component
  */
 .rank-label-container {
-    margin-top: 10px;
+   position: absolute;
+    top:50px;
+    width: 50%;
+    height: 100%;
+    left: 30%;
     z-index: 100;
     text-align: center;
 }

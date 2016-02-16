@@ -13,7 +13,7 @@ $userRole = $userRole[0]['roleTitle'];
         <div class=" col-xs-12  user-details">
             <div class="user-image text-center">
                 <img src="<?php echo "include/uploads/" . $currentUser['userPic']; ?>" width="120" height="120"
-                     alt="profile_pic" title="profile_pic" class="img-circle">
+                     alt="profile_pic" title="profile_pic" class="img-circle"/>
             </div>
             <div class="user-info-block">
                 <div class="user-heading">
@@ -36,8 +36,8 @@ $userRole = $userRole[0]['roleTitle'];
                         </a>
                     </li>
                     <li>
-                        <a data-toggle="tab" href="#roles">
-                            <span class="fa fa-calendar" id="role"></span>
+                        <a data-toggle="tab" href="#roles" id="role">
+                            <span class="fa fa-calendar" ></span>
                         </a>
                     </li>
                 </ul>

@@ -6,22 +6,23 @@ $userRole = select_RoleTitle_by_RoleId($currentUser['RoleId']);
 $userRole = $userRole[0]['roleTitle'];
 ?>
 <div class="container-fluid">
-<div class="row">
-    <div class="col-xs-4">
+<div class="row col-xs-12 col-sm-10 col-sm-offset-1 jumbotron">
+
+    <div class="col-xs-6">
+        <div >
+            <div class="container text-center ">
+                <h4 class=" fa fa-user text-right"> نام کاربری: <?php echo $currentUser['userName'];?></h4>
+                <h4 class="fa fa-dashboard text-right"> نقش: <?php echo  $userRole;?></h4>
+                <h4 class="fa fa-envelope-square text-right"> ایمیل کاربری: <?php echo $currentUser['userEmail'];?></h4>
+                <h4 class="fa fa-calendar text-right"> تاریخ ثبت نام: <?php echo dateconvertfromdb($currentUser['userSignDate']);?></h4>
+                <h4 class="fa fa-calendar text-right"> آخرین ورود به سیستم:<?php echo dateconvertfromdb($currentUser['userLastLoginDate']);?></h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6">
         <img
             src="<?php echo "include/uploads/".$currentUser['userPic']; ?>"
             alt="" class="img-rounded img-responsive"/>
-    </div>
-    <div class="col-xs-8">
-        <div class="jumbotron">
-            <div class="container text-center">
-                <h4><?php echo $currentUser['userName'];?></h4>
-                <h5><?php echo  $userRole;?></h5><hr>
-                <h5><?php echo $currentUser['userEmail'];?> &nbsp;<i class="fa fa-envelope fa-2x"></i></h5>
-                <br/> <i class=""></i> <?php echo dateconvertfromdb($currentUser['userSignDate']);?>
-                <br/> <i class=""></i> <?php echo dateconvertfromdb($currentUser['userLastLoginDate']);?></p>
-            </div>
-        </div>
     </div>
 </div>
 </div>

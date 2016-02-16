@@ -70,13 +70,13 @@ $userRole = $userRole[0]['roleTitle'];
 </div>
 <div class="col-xs-12 col-sm-6">
     <div class="profile-header-container">
+
         <div class="profile-header-img">
-            <img class="img-thumbnail" src="<?php echo "include/uploads/".$currentUser['userPic'] ?>" />
-            <!-- badge -->
-            <div class="rank-label-container">
-                <button class="btn btn-info btn-block "><span class="fa fa-edit fa-2x"></span> </button>
+            <img class="img-thumbnail" src="<?php echo "include/uploads/".$currentUser['userPic'] ?>">
+            <div>
+                <a id="changePic" href="#"><h5> تغییر </h5></a>
             </div>
-            <form action="include/upload.php" method="post" enctype="multipart/form-data">
+            <form id="frmChangePic" action="include/upload.php" method="post" enctype="multipart/form-data">
                 Select image to upload:
                 <input type="file" name="fileToUpload" id="fileToUpload">
                 <input name="userId" value="<?php echo $currentUser['userId'];?>" hidden>
@@ -86,3 +86,12 @@ $userRole = $userRole[0]['roleTitle'];
     </div>
 </div>
 </div>
+<script>
+    $(document).ready(function(){
+        $("#frmChangePic").css("opacity","0");
+       $("#changePic").click(function(e){
+           e.preventDefault();
+           $("#frmChangePic").css("opacity","1");
+       }) ;
+    });
+</script>

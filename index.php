@@ -16,44 +16,9 @@ $validUser = select_user_by_userId($validUserId)[0];
 </head>
 <body>
 <div id="wrapper">
-    <!--navbar-->
-    <nav class="navbar navbar-default  navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.php">WebSiteName</a>
-            </div>
-            <span id="menu-toggle" >
-                <span class="fa fa-2x fa-align-justify absolute-center"></span>
-            </span>
-            <ul class="nav navbar-nav">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $validUser['userName']; ?>
-                        <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <div class="card">
-                                <div class="avatar">
-                                    <img src="<?php echo "include/uploads/" . $validUser['userPic']; ?>" class="img-circle img-thumbnail"/>
-                                </div>
-                                <div class="content">
-                                    <p><?php echo $validUser['userName']; ?><br>
-                                        More description here</p>
-                                    <p>
-                                        <button type="button" class="btn btn-info btn-block" id="profile">profile</button>
-                                        <button type="button" class="btn btn-info btn-block" id="profile">LogOUt</button>
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li id="validUser"><a href="#"><span class="fa fa-bell fa-2x"></span> </a></li>
-            </ul>
-        </div>
-    </nav>
-    <!--end navbar-->
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
+        <a href="index.php">WebSiteName</a>
         <div class="avatar">
             <img src="<?php echo "include/uploads/" . $validUser['userPic']; ?>" width="80" height="80"
                  class="img-responsive img-circle"/>
@@ -73,6 +38,39 @@ $validUser = select_user_by_userId($validUserId)[0];
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row">
+                <!--navbar-->
+                <nav class="navbar navbar-default  navbar-fixed-top">
+                    <div class="container-fluid">
+                            <span id="menu-toggle" >
+                                <span class="fa fa-2x fa-align-justify absolute-center"></span>
+                            </span>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $validUser['userName']; ?>
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="card">
+                                            <div class="avatar">
+                                                <img src="<?php echo "include/uploads/" . $validUser['userPic']; ?>" class="img-circle img-thumbnail"/>
+                                            </div>
+                                            <div class="content">
+                                                <p><?php echo $validUser['userName']; ?><br>
+                                                    More description here</p>
+                                                <p>
+                                                    <button type="button" class="btn btn-info btn-block" id="profile">profile</button>
+                                                    <button type="button" class="btn btn-info btn-block" id="profile">LogOUt</button>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="validUser"><a href="#"><span class="fa fa-bell fa-2x"></span> </a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--end navbar-->
                 <div id="pre">
                     <div class="col-xs-10 col-xs-offset-1">
                         <div class="jumbotron">
@@ -112,10 +110,6 @@ $validUser = select_user_by_userId($validUserId)[0];
 
 </div>
 <!-- /#wrapper -->
-
-<!-- jQuery -->
-
-<!-- Bootstrap Core JavaScript -->
 
 <!-- Menu Toggle Script -->
 <script>
