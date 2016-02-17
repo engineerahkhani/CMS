@@ -3,8 +3,7 @@ require_once("../../../../include/config.php");
 
 ?>
 <div class="col-xs-12 col-sm-6">
-    <form accept-charset="UTF-8" role="form" id="register-form" method="post"
-          action="backend/addons/usermangement/register/registerNewRole.php">
+    <div>
         <h4 class="">
       New Role
         </h4>
@@ -13,14 +12,30 @@ require_once("../../../../include/config.php");
                                       <span class="input-group-addon">
                                          <span class="fa fa-user-md"></span>
                                       </span>
-                <input class="form-control" placeholder="roleTitle" name="roleTitle" type="text" value=""
+                <input class="form-control" placeholder="roleTitle" id="roleTitle" name="roleTitle" type="text" value=""
                        required="">
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-success btn-block">
+                <button id="btnAddRole"  class="btn btn-success btn-block">
                     ADD
                 </button>
             </div>
         </fieldset>
-    </form>
+    </div>
+    <div class="alert alert-success" role="alert">Well done! You successfully read this important alert message.</div>
+    <div class="alert alert-danger" role="alert">Oh snap! Change a few things up and try submitting again.</div>
+
 </div>
+<script>
+ $(document).ready(function(){
+     var roleTitle =  $('#roleTitle').val();
+
+     $("#btnAddRole").click(function(){
+         $.post("backend/addons/usermangement/register/registerNewRole.php",
+             {name:'ali'},
+             function(data, status){
+                 alert("Data: " + data.name + "\nStatus: " + status);
+             });
+     });
+ });
+</script>
