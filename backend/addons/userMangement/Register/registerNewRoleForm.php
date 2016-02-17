@@ -5,18 +5,18 @@ require_once("../../../../include/config.php");
 <div class="col-xs-12 col-sm-6">
     <div>
         <h4 class="">
-      New Role
+            New Role
         </h4>
         <fieldset>
             <div class="form-group input-group">
                                       <span class="input-group-addon">
                                          <span class="fa fa-user-md"></span>
                                       </span>
-                <input class="form-control" placeholder="roleTitle" id="roleTitle" name="roleTitle" type="text" value=""
+                <input class="form-control" placeholder="roleTitle" id="roleTitle" type="text"
                        required="">
             </div>
             <div class="form-group">
-                <button id="btnAddRole"  class="btn btn-success btn-block">
+                <button id="btnAddRole" class="btn btn-success btn-block">
                     ADD
                 </button>
             </div>
@@ -27,15 +27,27 @@ require_once("../../../../include/config.php");
 
 </div>
 <script>
- $(document).ready(function(){
-     var roleTitle =  $('#roleTitle').val();
+    $(document).ready(function () {
 
-     $("#btnAddRole").click(function(){
-         $.post("backend/addons/usermangement/register/registerNewRole.php",
-             {name:'ali'},
-             function(data, status){
-                 alert("Data: " + data.name + "\nStatus: " + status);
-             });
-     });
- });
+
+        $("#btnAddRole").click(function () {
+            var roleTitle = $("#roleTitle").val();
+            if (roleTitle == '') {
+                alert("لطفا عنوان مورد نظر را وارد نمایید.");
+            } else {
+
+
+                $.post("backend/addons/usermangement/register/registerNewRole.php",
+                    {
+                        roleTitle: roleTitle
+
+                    },
+                    function (data, status) {
+                        $('.alert-success').text(data);
+
+                        alert("Data: " + data + "\nStatus: " + status);
+                    });
+            }
+        });
+    });
 </script>
