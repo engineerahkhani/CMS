@@ -2,7 +2,7 @@
 require_once("../../../include/config.php");
 
 $userId = 1;
-$currentUser = select_user_by_userId($userId)[0];
+$currentUser = selectById('tblusers',$userId)[0];
 $userRole = select_RoleTitle_by_RoleId($currentUser['RoleId']);
 $userRole = $userRole[0]['roleTitle'];
 ?>

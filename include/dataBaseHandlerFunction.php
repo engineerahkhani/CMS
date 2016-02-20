@@ -24,7 +24,7 @@ function select_all($tbl)
 function selectById($tbl,$id)
 {
   $conn = db_connect();
-  $sql = "SELECT * from $tbl WHERE userId = $id";
+  $sql = "SELECT * from $tbl WHERE id = $id";
   $result = $conn->query($sql);
   if ($result->num_rows > 0) {
     // output data of each row
@@ -44,7 +44,7 @@ function selectById($tbl,$id)
 function select_user_by_userId($userId)
 {
   $conn = db_connect();
-  $sql = "SELECT * from tblusers WHERE userId = '$userId'";
+  $sql = "SELECT * from tblusers WHERE id = '$userId'";
   $result = $conn->query($sql);
   if ($result->num_rows > 0) {
     // output data of each row
@@ -65,7 +65,7 @@ function select_user_by_userId($userId)
 function delete_user( $userId)
 {
   $conn = db_connect();
-  $sql = "DELETE from tblUsers WHERE  userId='$userId'";
+  $sql = "DELETE from tblUsers WHERE  id='$userId'";
   if ($conn->query($sql) === TRUE) {
     return true;
   } else {
@@ -78,7 +78,7 @@ function delete_user( $userId)
 function register_user($username,$userEmail,$userPassword,$userRole){
   $conn = db_connect();
   $sql = "INSERT INTO  `test`.`tblusers` (
-`userId` ,
+`id` ,
 `userName` ,
 `userEmail` ,
 `userPassword` ,
@@ -97,7 +97,7 @@ VALUES (NULL,'$username','$userEmail','$userPassword',NULL ,NULL ,NULL ,'$userRo
 /////////////////////////////////////////////////////////////
 function registerNewRole($roleTitle){
   $conn = db_connect();
-  $sql = "INSERT INTO `tblroles` (`roleId` ,`roleTitle`)
+  $sql = "INSERT INTO `tblroles` (`id` ,`roleTitle`)
 VALUES (NULL,'$roleTitle')";
   if ($conn->query($sql) === TRUE) {
     return true;
@@ -111,7 +111,7 @@ VALUES (NULL,'$roleTitle')";
 function DeleteRole($roleId)
 {
   $conn = db_connect();
-  $sql = "DELETE from tblroles WHERE  rleId='$roleId'";
+  $sql = "DELETE from tblroles WHERE  id='$roleId'";
   if ($conn->query($sql) === TRUE) {
     return true;
   } else {
@@ -124,7 +124,7 @@ function DeleteRole($roleId)
 function select_RoleTitle_by_RoleId($roleId)
 {
   $conn = db_connect();
-  $sql = "SELECT roleTitle from tblroles WHERE  roleId = '$roleId'";
+  $sql = "SELECT roleTitle from tblroles WHERE  id = '$roleId'";
   $result = $conn->query($sql);
   if ($result->num_rows > 0) {
     // output data of each row
@@ -140,7 +140,7 @@ function select_RoleTitle_by_RoleId($roleId)
 function update_userName_userEmail($userId,$username,$userEmail){
   $conn = db_connect();
   $sql = "UPDATE `tblusers` SET
-         `userName`='$username',`userEmail`='$userEmail' WHERE userId ='$userId'";
+         `userName`='$username',`userEmail`='$userEmail' WHERE id ='$userId'";
   if ($conn->query($sql) === TRUE) {
     return true;
   } else {
@@ -153,7 +153,7 @@ function update_user_pic($userId,$userPic)
 {
   $conn = db_connect();
   $sql = "UPDATE `tblusers` SET
-         `userPic`='$userPic' WHERE userId ='$userId'";
+         `userPic`='$userPic' WHERE id ='$userId'";
   if ($conn->query($sql) === TRUE) {
     return true;
   } else {
@@ -165,7 +165,7 @@ function update_user_pic($userId,$userPic)
 function updateUserPassword($userId,$newPassword){
   $conn = db_connect();
   $sql = "UPDATE `tblusers` SET
-         `userPassword`='$newPassword' WHERE userId ='$userId'";
+         `userPassword`='$newPassword' WHERE id ='$userId'";
   if ($conn->query($sql) === TRUE) {
     return true;
   } else {

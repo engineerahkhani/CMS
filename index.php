@@ -2,7 +2,7 @@
 require_once("include/config.php");
 session_start();
 $validUserId = $_SESSION["validUserId"] = 1;
-$validUser = select_user_by_userId($validUserId)[0];
+$validUser = selectById('tblusers',$validUserId)[0];
 ?>
 <!DOCTYPE html>
 <html lang="fa">

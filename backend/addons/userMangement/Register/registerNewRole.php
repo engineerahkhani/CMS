@@ -1,9 +1,12 @@
 <?php
 require_once("../../../../include/config.php");
-$response = array("error" => 'FALSE');
 
 if( $_REQUEST["roleTitle"] && $_REQUEST["roleTitle"] !='' ) {
     $roleTitle = $_REQUEST['roleTitle'];
+    $successRegisterMessage = "نقش مورد نظر با موفقیت ثبت گردید.";
+    $failedRegisterMessage = "خطا در پایگاه داده! مجددا تلاش نمایید.";
+    $notValidInputMessage = "داده ورودی نامعتبر می باشد. لطفا دقت فرمایید.";
+
 
     if(test_input($roleTitle)){
         //check that data is unique
@@ -11,23 +14,19 @@ if( $_REQUEST["roleTitle"] && $_REQUEST["roleTitle"] !='' ) {
         {
             if(registerNewRole($roleTitle)){
               //role title saved successfully;
-                echo $roleTitle.'با موفقیت ثبت گردید.';
+                successRegisterMessage($successRegisterMessage);
             }
         }else {
-            $response["error"] = TRUE;
-            $response["error_msg"] = "Error in db execution";
-            echo "error in db execution";
+            failedRegisterMessage($failedRegisterMessage);
         }
     }else{
-        $response["error"] = TRUE;
-        $response["error_msg"] = "Not valid input";
-        echo "not vlid input";
+        failedRegisterMessage($$notValidInputMessage);
+
+
     }
-}else
-    $response["error"] = TRUE;
-    $response["error_msg"] = "Not valid input";
-echo "not vlid input";
+}else{
+    failedRegisterMessage($$notValidInputMessage);
+}
 
-
-
-//<!--/this is cool to work woith post :)/-->
+//
+//<!--/this is cool to work with Load :)/-->

@@ -1,38 +1,38 @@
 <?php
 require_once("../../../../include/config.php");
 $userId = 1;
-$currentUser = select_user_by_userId($userId)[0];
+$currentUser = selectById('tblusers',$userId)[0];
 $userRole = select_RoleTitle_by_RoleId($currentUser['RoleId']);
 $userRole = $userRole[0]['roleTitle'];
 ?>
 <div class="container-fluid">
 <div class="col-xs-12 col-sm-6">
     <div class="row">
-        <form accept-charset="UTF-8" role="form" id="register-form" method="post" action="backend/addons/usermangement/edit/editUsernameEmail.php">
+        <div>
             <h4 class="">
                 Update
             </h4>
-            <div class="alert alert-success" role="alert">Well done! You successfully read this important alert message.</div>
-            <div class="alert alert-danger" role="alert">Oh snap! Change a few things up and try submitting again.</div>
+
             <fieldset>
                 <div class="form-group input-group">
                       <span class="input-group-addon">
                           <span class="fa fa-user-md"></span>
                       </span>
-                    <input class="form-control" placeholder="" name="username" type="text" value="<?php echo $currentUser['userName'];?>" required="">
+                    <input class="form-control" placeholder="<?php echo $currentUser['userName'];?>" name="username" type="text" required="" id="txtUsername">
                 </div>
                 <div class="form-group input-group">
                       <span class="input-group-addon">
                             <span class="fa fa-envelope"></span>
                       </span>
-                    <input class="form-control" placeholder="Email" name="userEmail" type="email" required="" autofocus="" value="<?php echo $currentUser['userEmail'];?>">
+                    <input class="form-control" placeholder="<?php echo $currentUser['userEmail'];?>" name="userEmail" type="email" required="" autofocus="" id="txtUserEmail">
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-info btn-block">UPDATE
+                    <button type="submit" class="btn btn-info btn-block" id="updateUsernameEmail">UPDATE
                     </button>
                 </div>
+                <div id="message"></div>
             </fieldset>
-        </form>
+        </div>
     </div>
     <div class="row">
         <form accept-charset="UTF-8" role="form" id="change-password-form" method="post" action="backend/addons/usermangement/edit/editPassword.php">
@@ -64,6 +64,8 @@ $userRole = $userRole[0]['roleTitle'];
                     <button type="submit" class="btn btn-info btn-block">Change
                     </button>
                 </div>
+                <div id="message2"></div>
+
             </fieldset>
         </form>
     </div>
@@ -88,6 +90,20 @@ $userRole = $userRole[0]['roleTitle'];
 </div>
 <script>
     $(document).ready(function(){
+        //update  User name email
+        $("#updateUsernameEmail").click(function () {
+            var username = $("#txtUsername").val();
+            var userEmail = $("#txtUserEmail").val();
+            if (username == '' || userEmail == null) {
+                alert("لطفا عنوان مورد نظر را وارد نمایید.");
+            } else {
+                $('#message').load("backend/addons/usermangement/edit/editUsernameEmail.php",
+                    {
+                        username: username,
+                        userEmail:userEmail
+                    });
+            }
+        });
         $("#frmChangePic").css("opacity","0");
        $("#changePic").click(function(e){
            e.preventDefault();

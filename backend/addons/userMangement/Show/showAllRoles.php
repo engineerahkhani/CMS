@@ -41,7 +41,7 @@ $roles = select_all('tblroles');
                                 <button class="btn btn-success btn-block" type="submit">Update</button>
                             </td>
                             <td>
-                                <button class="btn btn-default btn-block" name="Cancel">Cancel</button>
+                                <button class="btn btn-default btn-block" type="reset" name="Cancel">Cancel</button>
                             </td>
 
                         </tr>

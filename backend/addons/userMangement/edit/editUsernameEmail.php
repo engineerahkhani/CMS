@@ -1,17 +1,19 @@
 <?php
 require_once("../../../../include/config.php");
 
-if (isset($_POST))  // if form was submitted (if you came here with form data)
+if (isset($_REQUEST))  // if form was submitted (if you came here with form data)
 {
+    $successMessage = 'عملیات موردنظر با موفقیت انجام شد.';
+    $failedMessage = 'مجددا تلاش نمایید.';
     $userId = 4;
     //check that userId exist?
-    $username = $_POST['username'];
-    $userEmail = $_POST['userEmail'];
+    $username = $_REQUEST['username'];
+    $userEmail = $_REQUEST['userEmail'];
 
     if (update_userName_userEmail($userId, $username, $userEmail)){
-        return true;
+       successRegisterMessage($successMessage);
 
     } else {
-        return false;
+        failedRegisterMessage($failedMessage);
     }
 }

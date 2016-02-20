@@ -22,13 +22,11 @@ require_once("../../../../include/config.php");
             </div>
         </fieldset>
     </div>
-    <div class="alert alert-success" role="alert">Well done! You successfully read this important alert message.</div>
-    <div class="alert alert-danger" role="alert">Oh snap! Change a few things up and try submitting again.</div>
+    <div id=message></div>
 
 </div>
 <script>
     $(document).ready(function () {
-
 
         $("#btnAddRole").click(function () {
             var roleTitle = $("#roleTitle").val();
@@ -37,16 +35,14 @@ require_once("../../../../include/config.php");
             } else {
 
 
-                $.post("backend/addons/usermangement/register/registerNewRole.php",
+                $('#message').load("backend/addons/usermangement/register/registerNewRole.php",
                     {
                         roleTitle: roleTitle
 
-                    },
-                    function (data, status) {
-                        $('.alert-success').text(data);
-
-                        alert("Data: " + data + "\nStatus: " + status);
                     });
+
+                $("#showRoles").load('backend/addons/usermangement/show/showAllRoles.php');
+
             }
         });
     });
