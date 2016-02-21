@@ -3,8 +3,7 @@ require_once("../../../../include/config.php");
 
 if (isset($_REQUEST))  // if form was submitted (if you came here with form data)
 {
-    $successMessage = 'عملیات موردنظر با موفقیت انجام شد.';
-    $failedMessage = 'مجددا تلاش نمایید.';
+
     $userId = 4;
     //check that userId exist?
     $username = $_REQUEST['username'];
@@ -15,5 +14,6 @@ if (isset($_REQUEST))  // if form was submitted (if you came here with form data
 
     } else {
         failedRegisterMessage($failedMessage);
+
     }
 }

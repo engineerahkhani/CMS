@@ -6,7 +6,7 @@ $userRole = select_RoleTitle_by_RoleId($currentUser['RoleId']);
 $userRole = $userRole[0]['roleTitle'];
 ?>
 <div class="container-fluid">
-<div class="row col-xs-12 col-sm-10 col-sm-offset-1 jumbotron">
+<div class="row col-xs-12 col-sm-10 col-sm-offset-1">
 
     <div class="col-xs-6">
         <div >
@@ -19,7 +19,7 @@ $userRole = $userRole[0]['roleTitle'];
             </div>
         </div>
     </div>
-    <div class="col-xs-6">
+    <div class="col-xs-4 pull-left">
         <img
             src="<?php echo "include/uploads/".$currentUser['userPic']; ?>"
             alt="" class="img-rounded img-responsive"/>

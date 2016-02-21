@@ -1,112 +1,12 @@
-
+#allUsersTbl{
+    overflow: hidden;
+}
 .alert-danger{
     opacity: 1;
 }
 .alert-success{
     opacity:1;
 }
-.user-details {
-    position: relative;
-    padding: 0;
-}
-
-.user-details .user-image {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-}
-
-.user-image img {
-    clear: both;
-    margin: auto;
-    position: relative;
-}
-
-.user-details .user-info-block {
-    width: 100%;
-    position: absolute;
-    top: 70px;
-    background: rgba(240, 240, 240,0.8);
-    z-index: 0;
-    padding-top: 35px;
-    text-align: center;
-}
-
-.user-info-block .user-heading {
-    width: 100%;
-    text-align: center;
-
-}
-
-.user-info-block .navigation {
-    text-align: center;
-    float: left;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    list-style: none;
-    border-bottom: 1px solid #428BCA;
-    border-top: 1px solid #428BCA;
-}
-
-.navigation li {
-    float: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navigation li a {
-    padding: 20px 30px;
-    float: left;
-}
-
-.navigation li.active a {
-    background: #428BCA;
-    color: #fff;
-}
-
-.user-info-block .user-body {
-    float: left;
-    padding: 0 5%;
-    width: 100%;
-}
-
-.user-body .tab-content > div {
-    float: left;
-    width: 100%;
-}
-
-.user-body .tab-content h4 {
-    width: 100%;
-    margin: 4px 0;
-    color: #333;
-}
-/**
-* Profile image component
-*/
-.profile-header-container{
-    margin: 0 auto;
-    text-align: center;
-}
-
-.profile-header-img {
-    padding: 54px;
-
-}
-
-/**
- * Ranking component
- */
-.rank-label-container {
-   position: absolute;
-    top:50px;
-    width: 50%;
-    height: 100%;
-    left: 30%;
-    z-index: 100;
-    text-align: center;
-}
-
 
 @keyframes fadeIn {
     from {

@@ -7,6 +7,7 @@ require_once(ROOT."functions.php");
 require_once(ROOT."config.php");
 require_once(ROOT."UiFunctions.php");
 require_once(ROOT . "dataBaseHandlerFunction.php");
+require_once(ROOT . "messages.php");
 
 
 

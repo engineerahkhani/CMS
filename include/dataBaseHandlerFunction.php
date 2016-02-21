@@ -136,6 +136,25 @@ function select_RoleTitle_by_RoleId($roleId)
     return $result_array;
   }
 }
+
+/**
+ * update user detail function
+ */
+function UpdateUserDetails($userId, $username, $userEmail,$userRegDate,$userLastLoginDate,$userRole) {
+  $conn = db_connect();
+  $sql = "UPDATE `tblusers` SET
+ `userName`= '$username' ,
+ `userEmail`= '$userEmail' ,
+`userSignDate`= '$userRegDate' ,
+`userLastLoginDate`= '$userLastLoginDate',
+`RoleId`= $userRole WHERE id = '$userId'";
+  if ($conn->query($sql) === TRUE) {
+    return true;
+  } else {
+    return false;
+  }
+  $conn->close();
+}
 /////////////////////////////////////////////////////////////
 function update_userName_userEmail($userId,$username,$userEmail){
   $conn = db_connect();
