@@ -108,15 +108,7 @@ body {
     color: #fff;
     background: none;
 }
-/*Admin/users/deleteUser*/
-#deleteUser:hover{
-    color: #f00000;
-    cursor: hand;
-}
-#editUser:hover{
-    color: #00aadc;
-    cursor: hand;
-}
+
 /*info box*/
 .info-box{
     width: 150px;

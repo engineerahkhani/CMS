@@ -8,13 +8,15 @@ $currentUserId = 1;
             Signin!
         </h4>
         <fieldset>
-            <div class="form-group input-group">
+            <div class="form-group input-group ">
                                       <span class="input-group-addon">
                                          <span class="fa fa-user-md"></span>
                                       </span>
                 <input class="form-control" placeholder="username" name="username" type="text" id="txtUsername"
                        required="required">
+
             </div>
+
             <div class="form-group input-group">
                               <span class="input-group-addon">
                                 <span class="fa fa-envelope"></span>
@@ -51,6 +53,7 @@ $currentUserId = 1;
         </fieldset>
     </div>
 </div>
+
 <script>
     $(document).ready(function(){
         //change password

@@ -40,27 +40,6 @@ function selectById($tbl,$id)
   }
   $conn->close();
 }
-//=============================================================
-function select_user_by_userId($userId)
-{
-  $conn = db_connect();
-  $sql = "SELECT * from tblusers WHERE id = '$userId'";
-  $result = $conn->query($sql);
-  if ($result->num_rows > 0) {
-    // output data of each row
-    //create an array
-    $result_array = array();
-    for ($count = 0; $row = $result->fetch_assoc(); $count++)
-    {
-      $result_array[$count] = $row;
-    }
-    return $result_array;
-  } else {
-    return 0;
-  }
-  $conn->close();
-}
-//=============================================================
 
 function delete_user( $userId)
 {
@@ -154,6 +133,21 @@ function UpdateUserDetails($userId, $username, $userEmail,$userRegDate,$userLast
     return false;
   }
   $conn->close();
+}
+
+/**
+ * check that data is unique;
+ */
+function isUnigue($title,$tbl){
+  $conn = db_connect();
+  $sql = "SELECT roleTitle
+          FROM  `$tbl`
+          WHERE roleTitle =  '$title'";
+  $result = $conn->query($sql);
+  if ($result->num_rows > 0) {
+    return false;
+  }else
+    return true;
 }
 /////////////////////////////////////////////////////////////
 function update_userName_userEmail($userId,$username,$userEmail){

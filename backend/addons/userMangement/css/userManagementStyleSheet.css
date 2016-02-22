@@ -7,7 +7,18 @@
 .alert-success{
     opacity:1;
 }
-
+.modal-content {
+    background-color: #d43f3a;
+}
+/*Admin/users/deleteUser*/
+.deleteUser:hover{
+    color: #f00000;
+    cursor: hand;
+}
+.editUser:hover{
+    color: #00aadc;
+    cursor: hand;
+}
 @keyframes fadeIn {
     from {
         opacity: 0;

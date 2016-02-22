@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0c836b4-ad5a-44e9-b3c1-37362e233acc" name="Default" comment="" />
+    <list default="true" id="c0c836b4-ad5a-44e9-b3c1-37362e233acc" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/addons/userMangement/css/styleSheet.css" afterPath="$PROJECT_DIR$/backend/addons/userMangement/css/userManagementStyleSheet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/addons/userMangement/Delete/delete.php" afterPath="$PROJECT_DIR$/backend/addons/userMangement/Delete/delete.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/addons/userMangement/Register/registerForm.php" afterPath="$PROJECT_DIR$/backend/addons/userMangement/Register/registerForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/addons/userMangement/Register/registerNewRole.php" afterPath="$PROJECT_DIR$/backend/addons/userMangement/Register/registerNewRole.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/addons/userMangement/index.php" afterPath="$PROJECT_DIR$/backend/addons/userMangement/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styleSheet.css" afterPath="$PROJECT_DIR$/css/styleSheet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/UiFunctions.php" afterPath="$PROJECT_DIR$/include/UiFunctions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/dataBaseHandlerFunction.php" afterPath="$PROJECT_DIR$/include/dataBaseHandlerFunction.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/messages.php" afterPath="$PROJECT_DIR$/include/messages.php" />
+    </list>
     <ignored path="CMS.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -21,108 +32,28 @@
     <favorites_list name="CMS" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7635432">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="registerNewRole.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/register/registerNewRole.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="registerForm.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/register/registerForm.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.49475262">
-                  <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="showAllUsers.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/show/showAllUsers.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="editUserDetails.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/edit/editUserDetails.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="editUserDetails.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/edit/editUserDetails.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="dataBaseHandlerFunction.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/include/dataBaseHandlerFunction.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5277361">
-                  <caret line="149" column="40" selection-start-line="149" selection-start-column="40" selection-end-line="149" selection-end-column="40" />
-                  <folding>
-                    <marker date="1456058491251" expanded="true" signature="159:173" placeholder="SELECT * fro..${$tbl}..." />
-                    <marker date="1456058491251" expanded="true" signature="640:670" placeholder="SELECT * fro..${$tbl}..." />
-                    <marker date="1456058491251" expanded="true" signature="1146:1189" placeholder="SELECT * fro..tblusers..." />
-                    <marker date="1456058491251" expanded="true" signature="1654:1694" placeholder="DELETE from ..." />
-                    <marker date="1456058491251" expanded="true" signature="1971:2200" placeholder="INSERT INTO ..tblusers..." />
-                    <marker date="1456058491251" expanded="true" signature="2444:2513" placeholder="INSERT INTO `tblroles`..." />
-                    <marker date="1456058491251" expanded="true" signature="2752:2792" placeholder="DELETE from ..." />
-                    <marker date="1456058491251" expanded="true" signature="3046:3098" placeholder="SELECT roleT..tblroles..." />
-                    <marker date="1456058491251" expanded="true" signature="3561:3755" placeholder="UPDATE `tblu..." />
-                    <marker date="1456058491251" expanded="true" signature="4027:4125" placeholder="UPDATE `tblu..." />
-                    <marker date="1456058491251" expanded="true" signature="4376:4447" placeholder="UPDATE `tblu..." />
-                    <marker date="1456058491251" expanded="true" signature="4704:4784" placeholder="UPDATE `tblu..." />
-                    <marker date="1456058491251" expanded="true" signature="5033:5055" placeholder="select * fro..category..." />
-                    <marker date="1456058491251" expanded="true" signature="5446:5589" placeholder="select Buyer..." />
-                    <marker date="1456058491251" expanded="true" signature="6033:6190" placeholder="select Buyer..." />
-                    <marker date="1456058491251" expanded="true" signature="6829:7083" placeholder="select * fro..shopping..." />
-                    <marker date="1456058491251" expanded="true" signature="7333:7361" placeholder="select MAX(i..shopping..." />
-                    <marker date="1456058491251" expanded="true" signature="7561:7708" placeholder="INSERT INTO shopping..." />
-                    <marker date="1456058491251" expanded="true" signature="8501:8935" placeholder="select bm_UR..shopping..." />
-                    <marker date="1456058491251" expanded="true" signature="8802:8872" placeholder="select bm_UR..shopping..." />
-                    <marker date="1456058491251" expanded="true" signature="9587:9650" placeholder="UPDATE `user..." />
-                    <marker date="1456058491251" expanded="true" signature="9887:9949" placeholder="SELECT LEVEL..user..." />
-                    <marker date="1456058491251" expanded="true" signature="10351:10373" placeholder="select level..user..." />
-                    <marker date="1456058491251" expanded="true" signature="10741:10782" placeholder="SELECT usern..user..." />
-                    <marker date="1456058491251" expanded="true" signature="11162:11211" placeholder="select pic f..images..." />
-                    <marker date="1456058491251" expanded="true" signature="11578:11631" placeholder="select email..user..." />
-                    <marker date="1456058491251" expanded="true" signature="12035:12057" placeholder="select * fro..category..." />
-                    <marker date="1456058491251" expanded="true" signature="12436:12450" placeholder="SELECT * FRO..${$table}..." />
-                    <marker date="1456058491251" expanded="true" signature="12858:12930" placeholder="select * fro..category..." />
-                    <marker date="1456058491251" expanded="true" signature="13081:13153" placeholder="INSERT INTO category..." />
-                    <marker date="1456058491251" expanded="true" signature="13597:13659" placeholder="delete from ..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="showAllUsers.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/show/showAllUsers.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.61490685">
+              <caret line="126" column="74" selection-start-line="126" selection-start-column="74" selection-end-line="126" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registerNewRoleForm.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/register/registerNewRoleForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.551724">
+              <caret line="50" column="22" selection-start-line="50" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -137,9 +68,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/layouts/users/change_password.php" />
-        <option value="$PROJECT_DIR$/layouts/users/ChangePassword.php" />
-        <option value="$PROJECT_DIR$/include/upload.php" />
         <option value="$PROJECT_DIR$/layouts/admin/users.php" />
         <option value="$PROJECT_DIR$/include/user_fns.php" />
         <option value="$PROJECT_DIR$/backend/Addons/UserMangement/Register/register.php" />
@@ -153,26 +81,18 @@
         <option value="$PROJECT_DIR$/backend/addons/userMangement/edit/editUserInDetailForm.php" />
         <option value="$PROJECT_DIR$/backend/addons/userMangement/css/css.css" />
         <option value="$PROJECT_DIR$/backend/addons/userMangement/edit/edit.php" />
-        <option value="$PROJECT_DIR$/backend/addons/userMangement/show/showAllUsers.php" />
         <option value="$PROJECT_DIR$/backend/addons/userMangement/Show/showCategory.php" />
         <option value="$PROJECT_DIR$/backend/addons/userMangement/Show/showAllRoles.php" />
         <option value="$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/meta.rnc" />
-        <option value="$PROJECT_DIR$/css/styleSheet.css" />
         <option value="$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/structural.rnc" />
-        <option value="$PROJECT_DIR$/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/backend/addons/userMangement/register/registerForm.php" />
         <option value="$PROJECT_DIR$/backend/addons/userMangement/Register/registerNewRoleForm.php" />
         <option value="$PROJECT_DIR$/backend/addons/userMangement/readeMe.php" />
-        <option value="$PROJECT_DIR$/include/UiFunctions.php" />
-        <option value="$PROJECT_DIR$/backend/addons/userMangement/register/registerNewRole.php" />
-        <option value="$PROJECT_DIR$/backend/addons/userMangement/register/registerNewRoleForm.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/backend/addons/userMangement/show/showUserInfo.php" />
         <option value="$PROJECT_DIR$/backend/addons/userMangement/show/showAllRoles.php" />
         <option value="$PROJECT_DIR$/include/config.php" />
         <option value="$PROJECT_DIR$/backend/addons/userMangement/Register/registerNewRole.php" />
         <option value="$PROJECT_DIR$/backend/addons/userMangement/edit/editPassword.php" />
-        <option value="$PROJECT_DIR$/include/messages.php" />
         <option value="$PROJECT_DIR$/backend/addons/userMangement/edit/editUsernameEmail.php" />
         <option value="$PROJECT_DIR$/backend/addons/userMangement/Register/register.php" />
         <option value="$PROJECT_DIR$/backend/addons/userMangement/edit/editUserDetailForm.php" />
@@ -181,13 +101,24 @@
         <option value="$PROJECT_DIR$/backend/addons/userMangement/edit/editPasswordForm.php" />
         <option value="$PROJECT_DIR$/backend/addons/userMangement/edit/editUsernameEmailForm.php" />
         <option value="$PROJECT_DIR$/backend/addons/userMangement/edit/editUserPicForm.php" />
-        <option value="$PROJECT_DIR$/backend/addons/userMangement/css/styleSheet.css" />
-        <option value="$PROJECT_DIR$/backend/addons/userMangement/index.php" />
         <option value="$PROJECT_DIR$/backend/addons/userMangement/Show/showUserInfo.php" />
         <option value="$PROJECT_DIR$/backend/addons/userMangement/edit/editUserDetails.php" />
-        <option value="$PROJECT_DIR$/include/dataBaseHandlerFunction.php" />
         <option value="$PROJECT_DIR$/backend/addons/userMangement/Show/showAllUsers.php" />
         <option value="$PROJECT_DIR$/backend/addons/userMangement/Register/registerForm.php" />
+        <option value="$PROJECT_DIR$/include/dataBaseHandlerFunction.php" />
+        <option value="$PROJECT_DIR$/include/messages.php" />
+        <option value="$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/pcre.php" />
+        <option value="$PROJECT_DIR$/backend/addons/userMangement/register/registerNewRole.php" />
+        <option value="$PROJECT_DIR$/include/UiFunctions.php" />
+        <option value="$PROJECT_DIR$/backend/addons/userMangement/css/styleSheet.css" />
+        <option value="$PROJECT_DIR$/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/backend/addons/userMangement/index.php" />
+        <option value="$PROJECT_DIR$/backend/addons/userMangement/register/registerForm.php" />
+        <option value="$PROJECT_DIR$/backend/addons/userMangement/Delete/delete.php" />
+        <option value="$PROJECT_DIR$/css/styleSheet.css" />
+        <option value="$PROJECT_DIR$/backend/addons/userMangement/css/userManagementStyleSheet.css" />
+        <option value="$PROJECT_DIR$/backend/addons/userMangement/register/registerNewRoleForm.php" />
+        <option value="$PROJECT_DIR$/backend/addons/userMangement/show/showAllUsers.php" />
       </list>
     </option>
   </component>
@@ -201,10 +132,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="786" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1298" />
+    <option name="height" value="780" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -217,7 +148,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -230,7 +161,184 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="userMangement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="userMangement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="userMangement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="register" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="userMangement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="userMangement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Delete" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/addons/userMangement/edit" />
@@ -299,10 +407,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="786" extended-state="6" />
+    <frame x="-9" y="-9" width="1298" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2591508" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29765624" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988167" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -320,25 +428,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988167" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2591508" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -356,7 +445,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/include/dataBaseHandlerFunction.php</url>
-          <line>248</line>
+          <line>242</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/backend/addons/userMangement/index.php</url>
@@ -368,21 +457,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/readeMe.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/styleSheet.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -523,13 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="14" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/meta.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
@@ -542,35 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3774" column="13" selection-start-line="3774" selection-start-column="13" selection-end-line="3774" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styleSheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/Delete/delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/UiFunctions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19131833">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -600,37 +638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="61" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/register/registerNewRoleForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36050156">
-          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/edit/editPassword.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/messages.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13322884">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -656,14 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13322884">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/edit/editPasswordForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.71943575">
@@ -678,13 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/css/styleSheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3197492">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/edit/editUsernameEmailForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7868339">
@@ -696,79 +688,194 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5062696">
           <caret line="19" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/edit/editUserDetails.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/show/showAllUsers.php">
+    <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/edit/editPassword.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+        <state vertical-scroll-proportion="-7.275862">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/register/registerNewRole.php">
+    <entry file="file://$PROJECT_DIR$/include/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state vertical-scroll-proportion="30.896551">
+          <caret line="63" column="14" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
+          <folding>
+            <marker date="1455367533209" expanded="true" signature="216:275" placeholder="SELECT * FRO..${$table}..." />
+            <marker date="1455367533209" expanded="true" signature="431:493" placeholder="SELECT `id` ..${$table}..." />
+            <marker date="1455367533209" expanded="true" signature="598:626" placeholder="select COUNT..article..." />
+            <marker date="1455367533209" expanded="true" signature="733:777" placeholder="select COUNT..article..." />
+            <marker date="1455367533209" expanded="true" signature="886:919" placeholder="SELECT `user..${$table}..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AsreMajazi/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.75862">
+          <caret line="44" column="25" selection-start-line="43" selection-start-column="12" selection-end-line="44" selection-end-column="25" />
+          <folding>
+            <marker date="1454508760877" expanded="true" signature="1757:1811" placeholder="SELECT * FRO..article..." />
+            <marker date="1454508760877" expanded="true" signature="5594:5999" placeholder="..." />
+            <marker date="1454508760877" expanded="true" signature="5618:5984" placeholder="..." />
+            <marker date="1454508760877" expanded="true" signature="5652:5969" placeholder="..." />
+            <marker date="1454508760877" expanded="true" signature="5710:5958" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/pcre.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3478261">
+          <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/UiFunctions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.310345">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.3448277">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/messages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.551724">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styleSheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.7577639">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/css/userManagementStyleSheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5124224">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2826087">
+          <caret line="71" column="11" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33229813">
+          <caret line="5637" column="1" selection-start-line="5637" selection-start-column="1" selection-end-line="5637" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/Delete/delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10248447">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/register/registerForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49475262">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.3416149">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/dataBaseHandlerFunction.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5277361">
-          <caret line="149" column="40" selection-start-line="149" selection-start-column="40" selection-end-line="149" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.45031056">
+          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
           <folding>
-            <marker date="1456058491251" expanded="true" signature="159:173" placeholder="SELECT * fro..${$tbl}..." />
-            <marker date="1456058491251" expanded="true" signature="640:670" placeholder="SELECT * fro..${$tbl}..." />
-            <marker date="1456058491251" expanded="true" signature="1146:1189" placeholder="SELECT * fro..tblusers..." />
-            <marker date="1456058491251" expanded="true" signature="1654:1694" placeholder="DELETE from ..." />
-            <marker date="1456058491251" expanded="true" signature="1971:2200" placeholder="INSERT INTO ..tblusers..." />
-            <marker date="1456058491251" expanded="true" signature="2444:2513" placeholder="INSERT INTO `tblroles`..." />
-            <marker date="1456058491251" expanded="true" signature="2752:2792" placeholder="DELETE from ..." />
-            <marker date="1456058491251" expanded="true" signature="3046:3098" placeholder="SELECT roleT..tblroles..." />
-            <marker date="1456058491251" expanded="true" signature="3561:3755" placeholder="UPDATE `tblu..." />
-            <marker date="1456058491251" expanded="true" signature="4027:4125" placeholder="UPDATE `tblu..." />
-            <marker date="1456058491251" expanded="true" signature="4376:4447" placeholder="UPDATE `tblu..." />
-            <marker date="1456058491251" expanded="true" signature="4704:4784" placeholder="UPDATE `tblu..." />
-            <marker date="1456058491251" expanded="true" signature="5033:5055" placeholder="select * fro..category..." />
-            <marker date="1456058491251" expanded="true" signature="5446:5589" placeholder="select Buyer..." />
-            <marker date="1456058491251" expanded="true" signature="6033:6190" placeholder="select Buyer..." />
-            <marker date="1456058491251" expanded="true" signature="6829:7083" placeholder="select * fro..shopping..." />
-            <marker date="1456058491251" expanded="true" signature="7333:7361" placeholder="select MAX(i..shopping..." />
-            <marker date="1456058491251" expanded="true" signature="7561:7708" placeholder="INSERT INTO shopping..." />
-            <marker date="1456058491251" expanded="true" signature="8501:8935" placeholder="select bm_UR..shopping..." />
-            <marker date="1456058491251" expanded="true" signature="8802:8872" placeholder="select bm_UR..shopping..." />
-            <marker date="1456058491251" expanded="true" signature="9587:9650" placeholder="UPDATE `user..." />
-            <marker date="1456058491251" expanded="true" signature="9887:9949" placeholder="SELECT LEVEL..user..." />
-            <marker date="1456058491251" expanded="true" signature="10351:10373" placeholder="select level..user..." />
-            <marker date="1456058491251" expanded="true" signature="10741:10782" placeholder="SELECT usern..user..." />
-            <marker date="1456058491251" expanded="true" signature="11162:11211" placeholder="select pic f..images..." />
-            <marker date="1456058491251" expanded="true" signature="11578:11631" placeholder="select email..user..." />
-            <marker date="1456058491251" expanded="true" signature="12035:12057" placeholder="select * fro..category..." />
-            <marker date="1456058491251" expanded="true" signature="12436:12450" placeholder="SELECT * FRO..${$table}..." />
-            <marker date="1456058491251" expanded="true" signature="12858:12930" placeholder="select * fro..category..." />
-            <marker date="1456058491251" expanded="true" signature="13081:13153" placeholder="INSERT INTO category..." />
-            <marker date="1456058491251" expanded="true" signature="13597:13659" placeholder="delete from ..." />
+            <marker date="1456147097397" expanded="true" signature="159:173" placeholder="SELECT * fro..${$tbl}..." />
+            <marker date="1456147097397" expanded="true" signature="640:670" placeholder="SELECT * fro..${$tbl}..." />
+            <marker date="1456147097397" expanded="true" signature="1074:1114" placeholder="DELETE from ..." />
+            <marker date="1456147097397" expanded="true" signature="1391:1620" placeholder="INSERT INTO ..tblusers..." />
+            <marker date="1456147097397" expanded="true" signature="1864:1933" placeholder="INSERT INTO `tblroles`..." />
+            <marker date="1456147097397" expanded="true" signature="2172:2212" placeholder="DELETE from ..." />
+            <marker date="1456147097397" expanded="true" signature="2466:2518" placeholder="SELECT roleT..tblroles..." />
+            <marker date="1456147097397" expanded="true" signature="2981:3175" placeholder="UPDATE `tblu..." />
+            <marker date="1456147097397" expanded="true" signature="3390:3467" placeholder="SELECT roleT..${$tbl}..." />
+            <marker date="1456147097397" expanded="true" signature="3740:3838" placeholder="UPDATE `tblu..." />
+            <marker date="1456147097397" expanded="true" signature="4089:4160" placeholder="UPDATE `tblu..." />
+            <marker date="1456147097397" expanded="true" signature="4417:4497" placeholder="UPDATE `tblu..." />
+            <marker date="1456147097397" expanded="true" signature="4746:4768" placeholder="select * fro..category..." />
+            <marker date="1456147097397" expanded="true" signature="5159:5302" placeholder="select Buyer..." />
+            <marker date="1456147097397" expanded="true" signature="5746:5903" placeholder="select Buyer..." />
+            <marker date="1456147097397" expanded="true" signature="6542:6796" placeholder="select * fro..shopping..." />
+            <marker date="1456147097397" expanded="true" signature="7046:7074" placeholder="select MAX(i..shopping..." />
+            <marker date="1456147097397" expanded="true" signature="7274:7421" placeholder="INSERT INTO shopping..." />
+            <marker date="1456147097397" expanded="true" signature="8214:8648" placeholder="select bm_UR..shopping..." />
+            <marker date="1456147097397" expanded="true" signature="8515:8585" placeholder="select bm_UR..shopping..." />
+            <marker date="1456147097397" expanded="true" signature="9300:9363" placeholder="UPDATE `user..." />
+            <marker date="1456147097397" expanded="true" signature="9600:9662" placeholder="SELECT LEVEL..user..." />
+            <marker date="1456147097397" expanded="true" signature="10064:10086" placeholder="select level..user..." />
+            <marker date="1456147097397" expanded="true" signature="10454:10495" placeholder="SELECT usern..user..." />
+            <marker date="1456147097397" expanded="true" signature="10875:10924" placeholder="select pic f..images..." />
+            <marker date="1456147097397" expanded="true" signature="11291:11344" placeholder="select email..user..." />
+            <marker date="1456147097397" expanded="true" signature="11748:11770" placeholder="select * fro..category..." />
+            <marker date="1456147097397" expanded="true" signature="12149:12163" placeholder="SELECT * FRO..${$table}..." />
+            <marker date="1456147097397" expanded="true" signature="12571:12643" placeholder="select * fro..category..." />
+            <marker date="1456147097397" expanded="true" signature="12794:12866" placeholder="INSERT INTO category..." />
+            <marker date="1456147097397" expanded="true" signature="13310:13372" placeholder="delete from ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/register/registerNewRole.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34868422">
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/register/registerNewRoleForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.551724">
+          <caret line="50" column="22" selection-start-line="50" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/addons/userMangement/show/showAllUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61490685">
+          <caret line="126" column="74" selection-start-line="126" selection-start-column="74" selection-end-line="126" selection-end-column="74" />
+          <folding />
         </state>
       </provider>
     </entry>

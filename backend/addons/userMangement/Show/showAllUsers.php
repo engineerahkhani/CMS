@@ -6,7 +6,7 @@ $users = select_all('tblusers');
 <div class="container-fluid" id="allUsersTbl">
     <div class="row">
         <div class="col-xs-12">
-            <table id="tblUsers" class="table table-responsive table-hover table-bordered">
+            <table id="tblUsers" class="table table-responsive table-hover ">
                 <caption>
                     <h3 class="text-info">All Users</h3>
                     <div id="message"></div>
@@ -36,17 +36,15 @@ $users = select_all('tblusers');
                         <td><?php $userRoleArray = select_RoleTitle_by_RoleId($user['RoleId']);
                             echo $userRoleArray[0]['roleTitle']; ?></td>
                         <td>
-                <span id="editUser" class="fa fa-edit fa-2x" type="button" data-toggle="modal"
-                      data-target="#myModal">
-                </span>
+                            <span  class="fa fa-edit fa-2x editUser" type="button" data-toggle="modal" data-target="#myModal">
+                            </span>
                         </td>
-                        <td><span id="deleteUser" class="fa fa-remove fa-2x" type="button" data-toggle="modal"
-                                  data-target="#DeleteIt">
-                </span>
+                        <td><span class="fa fa-remove fa-2x deleteUser" type="button" data-toggle="modal" data-target="#DeleteIt">
+                            </span>
                         </td>
                     </tr>
                     <span>
-                        <tr id="editUserForm" >
+                        <tr  class="hidden editUserForm" >
                             <td></td>
                             <td>
                             <input  id="txtUserId" name="userId" value="<?php echo $user['id'];?>" hidden>
@@ -77,9 +75,29 @@ $users = select_all('tblusers');
                             <td>
                                 <button class="btn btn-default btn-block" name="Cancel">Cancel</button>
                             </td>
-
                         </tr>
                     </span>
+                    <!-- Modal -->
+                    <div id="DeleteUserModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">اخطار</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>لطفا عنوان مورد نظر را وارد نمایید.</p>
+                                    <p><?php echo $i;?></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button  type="button" class="btn btn-danger btn-block btnDeleteUser" data-dismiss="modal">Delete</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--end modal-->
                     <?php ++$i;
                 } ?>
             </table>
@@ -100,13 +118,25 @@ $users = select_all('tblusers');
 </div>
 <script>
     $(document).ready(function () {
+        $(".deleteUser").click(function(){
+            $("#DeleteUserModal").modal('show');
+        });
+        $(".btnDeleteUser").click(function(){
+//            var userId = $("#roleTitle").val();
+userId = 2;
+            $('#message').load("backend/addons/usermangement/delete/delete.php",
+                {
+                    userId: userId
+                });
+        });
 
-        $("#editUser").click(function () {
-            $("#editUserForm").toggleClass('hidden');
+        $(".editUser").click(function () {
+//            var i = $(".editUserForm").eq(1).attr("id");
+
+            $(this).closest('tr').next('tr').toggleClass('hidden');
         });
         //update  User name email register date login date user role
         $("#updateUserDetail").click(function () {
-            alert();
 
             var userId = $("#txtUserId").val();
             var username = $("#txtUsername").val();
@@ -137,6 +167,8 @@ $users = select_all('tblusers');
                         roleTitle:roleTitle
 
                     });
+            $("#showAdminPanel").load('backend/addons/usermangement/show/showAllUsers.php');
+
 
 
 

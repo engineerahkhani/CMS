@@ -1,12 +1,11 @@
 <?php
 require_once("../../../include/config.php");
-
+echo "<link href=\"backend/addons/usermangement/css/userManagementStyleSheet.css\" rel=\"stylesheet\">";
 $userId = 1;
 $currentUser = selectById('tblusers', $userId)[0];
 $userRole = select_RoleTitle_by_RoleId($currentUser['RoleId']);
 $userRole = $userRole[0]['roleTitle'];
 ?>
-<link href="<?php SitRoot ?>/CMS/backend/addons/usermangement/css/styleSheet.css" rel="stylesheet">
 
 <div class="container-fluid">
 
