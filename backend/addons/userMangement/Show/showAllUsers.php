@@ -27,7 +27,7 @@ $users = select_all('tblusers');
                     ?>
                     <tr>
                         <td><?php echo "$i" . "." ?></td>
-                        <td id="oldUserName"><?php echo $user['userName']; ?></td>
+                        <td dataUserName="<?php echo $user['userName']; ?>" id="oldUserName"><?php echo $user['userName']; ?></td>
                         <td id="oldUserEmail"><?php echo $user['userEmail']; ?></td>
                         <input id="oldUserRegDate" value="<?php echo ($user['userSignDate']); ?>" hidden>
                         <td><?php echo dateconvertfromdb($user['userSignDate']); ?></td>
@@ -87,8 +87,8 @@ $users = select_all('tblusers');
                                     <h4 class="modal-title">اخطار</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <p>لطفا عنوان مورد نظر را وارد نمایید.</p>
-                                    <p><?php echo $i;?></p>
+                                    <p>کاربر با مشخصات زیر پاک خواهد شد.</p>
+                                    <span class="fa fa-user">&nbsp;</span>UserName:<input id="selectedUser" class="disabled" value=""/>
                                 </div>
                                 <div class="modal-footer">
                                     <button  type="button" class="btn btn-danger btn-block btnDeleteUser" data-dismiss="modal">Delete</button>
@@ -119,15 +119,19 @@ $users = select_all('tblusers');
 <script>
     $(document).ready(function () {
         $(".deleteUser").click(function(){
+            var UserName = $(this).parent('td').data('dataUserName');
+            $("#selectedUser").val(UserName);
             $("#DeleteUserModal").modal('show');
         });
         $(".btnDeleteUser").click(function(){
-//            var userId = $("#roleTitle").val();
-userId = 2;
-            $('#message').load("backend/addons/usermangement/delete/delete.php",
+            // var userId = $("#roleTitle").val();
+            userId = 19;
+            $('#message').load("backend/addons/usermangement/delete/deleteUser.php",
                 {
                     userId: userId
                 });
+            $("#showAdminPanel").load('backend/addons/usermangement/show/showAllUsers.php');
+
         });
 
         $(".editUser").click(function () {
@@ -168,10 +172,6 @@ userId = 2;
 
                     });
             $("#showAdminPanel").load('backend/addons/usermangement/show/showAllUsers.php');
-
-
-
-
         });
 
 

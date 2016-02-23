@@ -41,7 +41,7 @@ function selectById($tbl,$id)
   $conn->close();
 }
 
-function delete_user( $userId)
+function deleteUser($userId)
 {
   $conn = db_connect();
   $sql = "DELETE from tblUsers WHERE  id='$userId'";
@@ -148,6 +148,20 @@ function isUnigue($title,$tbl){
     return false;
   }else
     return true;
+}
+/**
+ * check that data is exist;
+ */
+function isExist($id,$tbl){
+  $conn = db_connect();
+  $sql = "SELECT id
+          FROM  `$tbl`
+          WHERE id =  '$id'";
+  $result = $conn->query($sql);
+  if ($result->num_rows > 0) {
+    return true;
+  }else
+    return false;
 }
 /////////////////////////////////////////////////////////////
 function update_userName_userEmail($userId,$username,$userEmail){
