@@ -6,7 +6,7 @@ if($_REQUEST["roleTitle"] && $_REQUEST["roleTitle"] !='' ) {
     if (!$flag) {
         $roleTitle = $_REQUEST['roleTitle'];
             //check that data is unique
-            if (isUnigue($roleTitle, 'tblroles')) {
+            if (isUniqueRoleTitle($roleTitle, 'tblroles')) {
                 registerNewRole($roleTitle);
                 //role title saved successfully;
                 successRegisterMessage($successRegisterMessage);

@@ -5,7 +5,7 @@ $currentUserId = 1;
 <div class="container-fluid">
     <div class="col-xs-6 col-xs-offset-3">
         <h4 class="">
-            Signin!
+            Registeration Form:
         </h4>
         <fieldset>
             <div class="form-group input-group ">
@@ -14,7 +14,6 @@ $currentUserId = 1;
                                       </span>
                 <input class="form-control" placeholder="username" name="username" type="text" id="txtUsername"
                        required="required">
-
             </div>
 
             <div class="form-group input-group">
@@ -49,7 +48,7 @@ $currentUserId = 1;
                     Register
                 </button>
             </div>
-            <div id="message"></div>
+
         </fieldset>
     </div>
 </div>
@@ -75,13 +74,9 @@ $currentUserId = 1;
                         userEmail:userEmail,
                         userPassword:userPassword,
                         roleTitle:roleTitle
-
                     });
                 $("#showAdminPanel").load('backend/addons/usermangement/show/showAllUsers.php');
             }
-
-
         });
-
     });
 </script>

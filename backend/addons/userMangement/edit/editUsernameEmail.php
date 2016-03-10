@@ -4,7 +4,7 @@ require_once("../../../../include/config.php");
 if (isset($_REQUEST))  // if form was submitted (if you came here with form data)
 {
 
-    $userId = 4;
+    $userId = 1;
     //check that userId exist?
     $username = $_REQUEST['username'];
     $userEmail = $_REQUEST['userEmail'];

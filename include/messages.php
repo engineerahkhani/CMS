@@ -8,3 +8,4 @@ $notUniqueInputMessage = "عنوان تکراری! این عنوان قبلا د
 $notValidInputMessage = "داده ورودی نامعتبر می باشد. لطفا دقت فرمایید.";
 $notMatchPasswords = " پسورد های وارد شده یکسان نیستند. لطفا دقت فرماید. ";
 $notExistDataMessage = "عنوان مورد نظر یافت نشد، مجددا تلاش نماید.";
+$notValidUserMessage = "شما اجازه دسترسی به این بخش را ندارید.";

@@ -8,7 +8,7 @@ $userRole = $userRole[0]['roleTitle'];
 ?>
 
 <div class="container-fluid">
-
+    <div id="message"></div>
     <div class="row jumbotron">
         <div id="showUserInfo">
             //load user info

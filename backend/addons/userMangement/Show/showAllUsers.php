@@ -47,19 +47,19 @@ $users = select_all('tblusers');
                         <tr  class="hidden editUserForm" >
                             <td></td>
                             <td>
-                            <input  id="txtUserId" name="userId" value="<?php echo $user['id'];?>" hidden>
-                            <input id="txtUsername" class="form-control" name="username" type="text"
+                            <input  id="txtNewUserId" name="userId" value="<?php echo $user['id'];?>" hidden>
+                            <input id="txtNewUsername" class="form-control" name="username" type="text"
                                        value="<?php echo $user['userName']; ?>"
                                        required="">
                             </td>
                             <td><input id="txtUserEmail" class="form-control" name="userEmail" type="email"
                                        placeholder="<?php echo $user['userEmail']; ?>"></td>
-                            <td><input id="txtUserSignDate" class="form-control" name="username" type="text"
+                            <td><input id="txtNewUserSignDate" class="form-control" name="username" type="text"
                                        placeholder="<?php echo $user['userSignDate']; ?>"></td>
-                            <td><input id="txtUserLastLoginDate" class="form-control " name="username" type="text"
+                            <td><input id="txtNewUserLastLoginDate" class="form-control " name="username" type="text"
                                        placeholder="<?php echo $user['userLastLoginDate']; ?>"></td>
                             <td>
-                                <select class="form-control" id="selRoleTitle">
+                                <select class="form-control" id="selNewRoleTitle">
                                         <?php
                                         $roles = select_all('tblroles');
                                         foreach ($roles as $role) {
@@ -142,12 +142,12 @@ $users = select_all('tblusers');
         //update  User name email register date login date user role
         $("#updateUserDetail").click(function () {
 
-            var userId = $("#txtUserId").val();
-            var username = $("#txtUsername").val();
+            var userId = $("#txtNewUserId").val();
+            var username = $("#txtNewUsername").val();
             var userEmail = $("#txtUserEmail").val();
-            var userRegDate = $("#txtUserSignDate").val();
-            var userLastLoginDate = $("#txtUserLastLoginDate").val();
-            var roleTitle = $( "#selRoleTitle" ).val();
+            var userRegDate = $("#txtNewUserSignDate").val();
+            var userLastLoginDate = $("#txtNewUserLastLoginDate").val();
+            var roleTitle = $( "#selNewRoleTitle" ).val();
 
             if (username == '') {
                username = $("#oldUserName").text();
